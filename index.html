@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Game</title>
+	<style>
+		html,body{
+			padding: 0;
+			margin: 0;
+			width: 100vw;
+			height: 100vh;
+			background-color: black;
+			display: grid;
+			align-content: center;
+			justify-content: center;
+			color: violet;
+		}
+		p{
+			padding: 0;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<p id="score">Score: 0</p>
+	<p id="highscore">Highscore: 0</p>
+	<canvas id="ctx" width="640" height="480"></canvas>
+	<p>W and D, or mouse to move</p>
+	
+	<script src="./jwf/dist/jwf.js"></script>
+	<script src="./jwf/dist/jwml.js"></script>
+	<script src="./jwf/dist/jwCL.js"></script>
+	<script src="./jwf/dist/party.js"></script>
+	<script type="module" src="game.js"></script>
+</body>
+</html>
